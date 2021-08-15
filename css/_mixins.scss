@@ -1,0 +1,48 @@
+// ********************** TYPOGRAPHY *********************
+
+@mixin fontPrimary {
+  font-size: 4.1rem;
+  font-weight: 700;
+  color: white;
+  text-transform: capitalize;
+}
+@mixin fontSecondary {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: $secondary-text-color;
+  margin-bottom: 3.5rem;
+  text-transform: capitalize;
+}
+@mixin fontTertiary {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $secondary-text-color;
+  text-transform: capitalize;
+}
+@mixin fontRegular {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $regular-text-color;
+  line-height: 1.6rem;
+}
+
+@mixin sectionTag {
+  color: $primary-color;
+  background-color: rgb(238, 238, 253);
+  padding: 0.3rem 0.5rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+}
+// ********************** BUTTON ***********************
+@mixin button {
+  color: white;
+  background-color: $primary-color;
+  font-size: 1.2rem;
+  padding: 1em 1.7em;
+  border-radius: 50px;
+  transition: $transition;
+
+  &:hover {
+    background-color: rgb(75, 75, 251);
+  }
+}
